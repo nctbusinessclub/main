@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>NCT Business Club</title>
+    <meta name="description"
+        content="NCT Business Club - Sân chơi cho học sinh yêu thích kinh tế, tài chính và khởi nghiệp.">
+    <link rel="icon" type="image/png" href="imgs/logo clb.jpg" />
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:wght@600&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main class="main-body">
+        <!-- NAVBAR -->
+        <header class="nav">
+            <div class="container nav-inner">
+                <div class="brand">
+                    <div class="logo">
+                        <img src="imgs/logo trong suot.png" alt="NCT Business Club Logo">
+                    </div>
+                    <h1>NCT Business Club</h1>
+                </div>
+                <nav class="main-menu">
+                    <a href="#intro">Giới thiệu</a>
+                    <a href="#act">Hoạt động</a>
+                    <a href="https://nctbusiness.blogspot.com/">Blog kiến thức</a>
+                    <a class="btn-cta" href="#join">Tuyển thành viên</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- HERO -->
+        <section id="intro" class="hero">
+            <div class="container hero-grid">
+                <div>
+                    <h2>Chào mừng tới NCT Business CLUB</h2>
+                    <p class="lead">Cùng học tập, chia sẻ và phát triển kỹ năng kinh doanh, tài chính, quản trị.</p>
+                    <a href="#" class="mini-cta">Khám phá ngay</a>
+                </div>
+                <div class="hero-card">
+                    <img class="hero-img" src="imgs/main-img.png" alt="Hero Image">
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: CARDS -->
+        <section id="act" class="section">
+            <div class="container">
+                <h3 class="section-title">Hoạt động nổi bật</h3>
+                <div class="card-row">
+                    <div class="card">
+                        <div class="thumb"><img src="imgs/workshop.jpg" alt=""></div>
+                        <h4>Workshop</h4>
+                        <p>Chia sẻ kiến thức từ chuyên gia.</p>
+                    </div>
+                    <div class="card">
+                        <div class="thumb"><img src="imgs/seminar.jpg" alt=""></div>
+                        <h4>Seminar</h4>
+                        <p>Trao đổi, thảo luận chuyên đề.</p>
+                    </div>
+                    <div class="card">
+                        <div class="thumb"><img src="imgs/project.jpg" alt=""></div>
+                        <h4>Dự án</h4>
+                        <p>Thực hành nghiên cứu và báo cáo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: FEATURE -->
+        <section id="blog" class="section">
+            <div class="container feature">
+                <div>
+                    <h3 class="section-title">Blog kiến thức</h3>
+                    <p>Blog là nơi chia sẻ các kinh nghiệm, kiến thức của các thành viên câu lạc bộ.</p>
+                    <p>Trải dài từ các lĩnh vực kinh tế, kinh doanh, quản trị</p>
+                    <div class="btn-row">
+                        <a href="https://nctbusiness.blogspot.com/" class="btn secondary">Tìm hiểu thêm</a>
+                    </div>
+                </div>
+                <div class="feature-img"><img src="" alt=""></div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section class="section">
+            <div class="container">
+                <h3 class="section-title">Cảm nhận thành viên</h3>
+                <div class="testi-row">
+                    <div class="testimonial">
+                        <p>"CLB giúp em tự tin hơn trong thuyết trình."</p>
+                        <div class="meta">- Nam, 11D1</div>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Em học được nhiều kiến thức kinh tế thực tiễn."</p>
+                        <div class="meta">- Linh, 12A2</div>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Một nơi kết nối bạn bè và định hướng nghề nghiệp."</p>
+                        <div class="meta">- Hùng, 10C9</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FINAL CTA -->
+        <section id="join" class="container final-cta">
+            <h3>Tham gia CLB ngay hôm nay!</h3>
+            <a href="#" class="btn">Đăng ký</a>
+        </section>
+        <!-- MODAL -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Đăng ký tham gia CLB</h3>
+                <form action="https://formspree.io/f/xblabnvk" method="POST" class="modal-form">
+                    <label>Họ và tên</label>
+                    <input type="text" name="name" required>
+
+                    <label>Lớp</label>
+                    <input type="text" name="class" required>
+
+                    <label>Email</label>
+                    <input type="email" name="email" required>
+
+                    <button type="submit" class="btn">Gửi đăng ký</button>
+                    <input type="hidden" name="_redirect" value="https://youtube.com">
+                </form>
+            </div>
+        </div>
+
+
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="container footer-grid">
+                <div>©2025 NCT Business Club</div>
+                <div>Facebook | Instagram</div>
+                <div>Email: nct.business.club@gmail.com</div>
+            </div>
+        </footer>
+
+        <!-- JS -->
+        <script src="script.js"></script>
+</body>
+
+</html>
