@@ -7,7 +7,7 @@
     <title>NCT Business Club</title>
     <meta name="description"
         content="NCT Business Club - Sân chơi cho học sinh yêu thích kinh tế, tài chính và khởi nghiệp.">
-    <link rel="icon" type="image/png" href="imgs/logo clb.jpg" />
+    <link rel="icon" type="image/png" href="imgs/logo title.png" />
     <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:wght@600&display=swap"
@@ -15,6 +15,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
@@ -32,7 +33,7 @@
                     <a href="#intro">Giới thiệu</a>
                     <a href="#act">Hoạt động</a>
                     <a href="https://nctbusiness.blogspot.com/">Blog kiến thức</a>
-                    <a class="btn-cta" href="#join">Tuyển thành viên</a>
+                    <a class="btn-cta" style="border: #0f4c81 2px solid;" href="#join">Tuyển thành viên</a>
                 </nav>
             </div>
         </header>
@@ -42,8 +43,10 @@
             <div class="container hero-grid">
                 <div>
                     <h2>Chào mừng tới NCT Business CLUB</h2>
-                    <p class="lead">Cùng học tập, chia sẻ và phát triển kỹ năng kinh doanh, tài chính, quản trị.</p>
-                    <a href="#" class="mini-cta">Khám phá ngay</a>
+                    <p class="lead">CLB Business NCT – một "em út" trong 19 CLB toàn trường, là sân chơi dành cho những
+                        bạn đam mê kinh tế, kinh doanh và quản trị. Đây là nơi để học sinh cùng nhau học tập, chia sẻ và
+                        rèn luyện kỹ năng, chuẩn bị hành trang vững chắc cho tương lai.</p>
+                    <a href="https://www.facebook.com/profile.php?id=61579953514124" class="mini-cta">Khám phá ngay</a>
                 </div>
                 <div class="hero-card">
                     <img class="hero-img" src="imgs/main-img.png" alt="Hero Image">
@@ -86,11 +89,37 @@
                         <a href="https://nctbusiness.blogspot.com/" class="btn secondary">Tìm hiểu thêm</a>
                     </div>
                 </div>
-                <div class="feature-img"><img src="" alt=""></div>
+                <div class="feature-img"><img src="imgs/blog-menu.png" alt=""></div>
+            </div>
+        </section>
+        <!-- SECTION: CLUB TEAMS -->
+        <h3 class="section-title-clb">Cơ cấu tổ chức</h3>
+        <section class="container-clb">
+
+            </div>
+            <div class="box">
+                <h2>Ban Học Thuật- Dự Án</h2>
+                <p>Phụ trách nghiên cứu, học tập, tổ chức workshop và các buổi training về kinh tế – kinh doanh.</p>
+                <p><b>Nhiệm vụ:</b> Soạn nội dung học tập, mời diễn giả, hỗ trợ kiến thức cho thành viên.</p>
+                <img src="imgs/hocthuat.png" alt="Các thành viên ban học thuật-dự án">
+            </div>
+
+            <div class="box">
+                <h2>Ban Truyền Thông- Sự Kiện</h2>
+                <p>Quản lý hình ảnh và truyền thông của CLB trên các nền tảng mạng xã hội.</p>
+                <p><b>Nhiệm vụ:</b> Thiết kế poster, quay dựng video, viết bài truyền thông.</p>
+                <img src="imgs/media.png" alt="Các thành viên ban truyền thông-sự kiện">
+            </div>
+
+            <div class="box">
+                <h2>Ban Tài chính-
+                    Hậu cần</h2>
+                <p>Phân bổ tài chính, chi tiêu trong các sự kiện, dự án</p>
+                <p><b>Nhiệm vụ:</b> Tổ chức logistics, điều phối chương trình, kết nối đối tác.</p>
+                <img src="imgs/taichinh.png" alt="Các thành viên ban tài chính-hậu cần">
             </div>
         </section>
 
-        <!-- TESTIMONIALS -->
         <section class="section">
             <div class="container">
                 <h3 class="section-title">Cảm nhận thành viên</h3>
@@ -122,30 +151,90 @@
                 <span class="close">&times;</span>
                 <h3>Đăng ký tham gia CLB</h3>
                 <form action="https://formspree.io/f/xblabnvk" method="POST" class="modal-form">
-                    <label>Họ và tên</label>
+                    <label>Họ và tên:</label>
                     <input type="text" name="name" required>
 
-                    <label>Lớp</label>
+                    <label>Lớp:</label>
                     <input type="text" name="class" required>
 
-                    <label>Email</label>
+                    <label>Trường:</label>
+                    <input type="text" name="school" required>
+
+                    <label>Số điện thoại:</label>
+                    <input type="tel" name="phone " required>
+
+                    <label>Email:</label>
                     <input type="email" name="email" required>
 
+                    <label>Lý do tham gia câu lạc bộ:</label>
+                    <input type="text" name="reason" required>
+
+                    <label>Link Facebook chính:</label>
+                    <input type="url" name="facebook" required>
+
+                    <label>Bạn có nguyện vọng tham gia ban nào nè?</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="interest" value="Kinh doanh" required>
+                            Ban Học thuật-Dự án
+                        </label>
+
+                        <label class="radio-label">
+                            <input type="radio" name="interest" value="Tài chính">
+                            Ban Truyền thông-Sự kiện
+                        </label>
+
+                        <label class="radio-label">
+                            <input type="radio" name="interest" value="Marketing">
+                            Ban Tài chính-Hậu cần
+                        </label>
+                    </div>
+                    </label>
+
+
+
                     <button type="submit" class="btn">Gửi đăng ký</button>
-                    <input type="hidden" name="_redirect" value="https://youtube.com">
+                    <br>
+                    <p style="text-align: center;">Thanks you bạn! CLB sẽ phê duyệt và gửi mail xác nhận trong thời gian
+                        sớm nhất</p>
                 </form>
             </div>
         </div>
+
+        <section class="social-section">
+            <h2>Kết nối với CLB</h2>
+            <p>Theo dõi trên các nền tảng mạng xã hội:</p>
+
+            <div class="social-container">
+                <div class="social-box facebook">
+                    <i class="fab fa-facebook"></i>
+                    <a href="https://www.facebook.com/profile.php?id=61579953514124" target="_blank">Facebook</a>
+                </div>
+
+                <div class="social-box tiktok">
+                    <i class="fab fa-tiktok"></i>
+                    <a href="https://www.tiktok.com/@tentiktok" target="_blank">TikTok</a>
+                </div>
+
+                <div class="social-box instagram">
+                    <i class="fab fa-instagram"></i>
+                    <a href="" target="_blank">Instagram</a>
+                </div>
+
+                <div class="social-box youtube">
+                    <i class="fab fa-youtube"></i>
+                    <a href="https://www.youtube.com/@tenyoutube" target="_blank">YouTube</a>
+                </div>
+            </div>
+        </section>
 
 
 
         <!-- FOOTER -->
         <footer>
-            <div class="container footer-grid">
-                <div>©2025 NCT Business Club</div>
-                <div>Facebook | Instagram</div>
-                <div>Email: nct.business.club@gmail.com</div>
-            </div>
+            <p>©2025 NCT Business Club by Duke Duong</p>
+            <p>Email: nct.business.club@gmail.com</p>
+
         </footer>
 
         <!-- JS -->
