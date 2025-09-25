@@ -146,6 +146,7 @@ nav.main-menu a:hover {
     border-radius: 14px;
     padding: 6px;
     overflow: hidden;
+    align-self: center;
 }
 
 .hero-img {
